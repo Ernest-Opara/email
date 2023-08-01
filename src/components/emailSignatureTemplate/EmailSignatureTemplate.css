@@ -1,0 +1,138 @@
+.email-signature-template {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    width: 600px; /* Set the desired width */
+    height: 300px; /* Set the desired height */
+    padding: 20px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+  }
+  
+  .left-half,
+  .right-half {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+  }
+  
+  .left-half {
+    border-right: 1px solid black;
+    padding-right: 20px; /* Add padding to the right to create space between the circles */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+  }
+  
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px; /* Add margin between the profile picture and company logo */
+  }
+  
+  .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .company-logo {
+    width: 120px;
+    height: 50px; /* Set the height to the desired value */
+    overflow: hidden;
+    margin-top: 50px; /* Add margin between the profile picture and company logo */
+  }
+  
+  .company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Use "contain" to fit the logo without distorting it */
+  }
+  
+  .right-half {
+    border-left: 1px solid black;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px; /* Add padding to the left to create space between the text and border */
+  }
+  
+  .card-title {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    color: rgb(0, 0, 0)
+  }
+
+  .card-subtitle {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgb(84, 85, 85)
+  }
+
+  .card-text {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgb(84, 85, 85)
+  }
+  
+  .contact-info {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add gap between contact items */
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgb(84, 85, 85)
+  }
+  
+  .contact-item .contact-icon {
+    margin-right: 5px;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  .social-media-icons .social-media-icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    color: #b02f34;
+  }
+  
+  .social-media-icons .social-media-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .card-title{
+    color: #070707;
+  }

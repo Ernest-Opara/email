@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import EmailSignatureTemplate from './components/emailSignatureTemplate/EmailSignatureTemplate';
+import Form from './components/forms/Forms';
 
-function App() {
+const App = () => {
+  const [formData, setFormData] = useState(null);
+
+  const handleSubmitForm = (data) => {
+    setFormData(data);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1>Email Signature Generator</h1>
+      <Form onSubmit={handleSubmitForm} />
+      {formData && (
+        <EmailSignatureTemplate data={formData} />
+      )}
     </div>
   );
-}
+};
 
 export default App;
