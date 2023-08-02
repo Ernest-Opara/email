@@ -12,6 +12,20 @@
     border-bottom-width: 0px;
   }
   
+  .has-personal-number{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    width: 600px; /* Set the desired width */
+    height: 330px; /* Set the desired height */
+    padding: 20px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+  }
+
   .left-half,
   .right-half {
     flex: 1;
@@ -135,4 +149,8 @@
   
   .card-title{
     color: #070707;
+  }
+
+  .user-phone {
+    margin-bottom: 0px;
   }

@@ -6,6 +6,7 @@ import logoImage from '../../assets/tflogo.png'
 const EmailSignatureForm = ({ onSubmit }) => {
   const [name, setName] = useState('');
   const [role, setRole] = useState('');
+  const [pNumber, setpNumber] = useState('');
   const [email, setEmail] = useState('');
   const [emailPicture, setEmailPicture] = useState(null);
 
@@ -14,6 +15,7 @@ const EmailSignatureForm = ({ onSubmit }) => {
     const formData = {
       name,
       role,
+      pNumber,
       email,
       emailPicture,
     };
@@ -28,7 +30,6 @@ const EmailSignatureForm = ({ onSubmit }) => {
 
   return (
     <Card className="form-card">
-      {/* Add logo at the top */}
       <Card.Img variant="top" src={logoImage} className="form-logo" />
       <Card.Body>
         <Form onSubmit={handleSubmit}>
@@ -57,6 +58,14 @@ const EmailSignatureForm = ({ onSubmit }) => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label>Personal Number</Form.Label>
+            <Form.Control
+              type="text"
+              value={pNumber}
+              onChange={(e) => setpNumber(e.target.value)}
             />
           </Form.Group>
           <Form.Group>

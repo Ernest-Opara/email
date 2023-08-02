@@ -14,10 +14,12 @@ import './EmailSignatureTemplate.css';
 import logoImage from '../../assets/tflogo.png'
 
 const EmailSignatureTemplate = ({ data }) => {
-  const { name, role, email, emailPicture } = data;
+  const { name, role, email, emailPicture, pNumber } = data;
+  const hasPersonalNumber = !!pNumber;
+  
 
   return (
-    <div className="email-signature-template">
+    <div className={`email-signature-template ${hasPersonalNumber ? 'has-personal-number' : ''}`}>
       <Card className="left-half">
         <div className="profile-picture">
           <img src={emailPicture} alt="Profile" />
@@ -37,6 +39,12 @@ const EmailSignatureTemplate = ({ data }) => {
               <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
               <a href={`mailto:${email}`}>{email}</a>
             </div>
+            <div className='contact-item'>{pNumber && (
+              <p className="user-phone">
+                <FontAwesomeIcon icon={faPhone} className="contact-icon" />
+                <a href='tel:{pNumber}'>{pNumber}</a>
+              </p>
+          )} </div>
             <div className="contact-item">
               <FontAwesomeIcon icon={faPhone} className="contact-icon" />
               <a href='tel:833-239-3183' >833-239-3183</a>
