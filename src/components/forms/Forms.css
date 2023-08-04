@@ -1,20 +1,30 @@
 .form-card {
     width: 400px;
+    height: 82vh;
     margin: auto;
     text-align: center;
     padding: 20px;
-  }
+}
   
-  .form-logo {
+.form-logo {
     width: 100px;
     margin: auto;
     display: block;
-  }
+}
   
-  .form-icon {
+.form-icon {
     margin-left: 5px;
-  }
+}
 
-  .btn {
+.btn {
     margin-top: 20px;
-  }
+}
+  
+.equal-height {
+    display: flex;
+    align-items: stretch; /* Stretch columns to equal height */
+}
+
+.data{
+  padding: 2%;
+}
