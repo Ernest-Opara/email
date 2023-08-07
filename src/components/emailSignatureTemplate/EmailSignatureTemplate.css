@@ -181,3 +181,8 @@
 .card-body {
   padding: 0%;
 }
+
+.contact-item{
+  text-decoration: underline;
+  text-emphasis-color: blue;
+}
